@@ -3,8 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="101 Meditações - O pacote definitivo para paz, sono e foco. Transforme sua mente em poucos minutos por dia.">
+    <meta name="theme-color" content="#020617">
+
+    <!--
+      ────────────────────────────────────────────────────────────────
+      101 MEDITAÇÕES — landing page oficial
+      URL publicada: https://tgmidasx7.github.io/mindemotions-app/
+      Se o repositório for renomeado (ex.: 101-meditacoes), atualize
+      SITE_URL abaixo + canonical + og:url + og:image + robots.txt
+      e sitemap.xml.
+      ────────────────────────────────────────────────────────────────
+    -->
     <title>101 Meditações | Paz, Foco e Sono Profundo</title>
+    <meta name="description" content="101 Meditações — o pacote definitivo para paz, sono e foco: 101 áudios de meditação guiada, reprogramações mentais e audiobooks bônus. Acesso vitalício por R$ 97.">
+    <meta name="keywords" content="meditação guiada, meditação para dormir, meditação para ansiedade, meditação para foco, 101 meditações, áudios de meditação">
+    <meta name="author" content="101 Meditações">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tgmidasx7.github.io/mindemotions-app/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="101 Meditações">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://tgmidasx7.github.io/mindemotions-app/">
+    <meta property="og:title" content="101 Meditações | Paz, Foco e Sono Profundo">
+    <meta property="og:description" content="Silencie a mente acelerada em poucos minutos por dia. 101 áudios de meditação guiada + bônus exclusivos. Acesso vitalício por R$ 97.">
+    <meta property="og:image" content="https://tgmidasx7.github.io/mindemotions-app/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="101 Meditações — Paz, Sono Profundo e Foco">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="101 Meditações | Paz, Foco e Sono Profundo">
+    <meta name="twitter:description" content="101 áudios de meditação guiada para ansiedade, sono e foco. Acesso vitalício por R$ 97.">
+    <meta name="twitter:image" content="https://tgmidasx7.github.io/mindemotions-app/assets/og-image.jpg">
+
+    <!-- Dados estruturados (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Pack 101 Meditações",
+      "description": "101 áudios de meditação guiada, reprogramações mentais (manhã/noite) e 3 audiobooks bônus, com acesso vitalício e download offline.",
+      "brand": { "@type": "Brand", "name": "101 Meditações" },
+      "image": "https://tgmidasx7.github.io/mindemotions-app/assets/og-image.jpg",
+      "url": "https://tgmidasx7.github.io/mindemotions-app/",
+      "offers": {
+        "@type": "Offer",
+        "price": "97.00",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://pay.kiwify.com.br/Zfyn2Er"
+      }
+    }
+    </script>
+
     
     <!-- Google Fonts: Inter (Leitura) e Playfair Display (Títulos Premium) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,10 +149,11 @@
             </div>
 
             <!-- Navegação Desktop -->
-            <nav class="hidden md:flex gap-8 text-sm text-slate-400 font-medium">
+            <nav class="hidden md:flex gap-8 text-sm text-slate-400 font-medium" aria-label="Navegação principal">
                 <a href="#beneficios" class="hover:text-brand-cyan transition-colors">Benefícios</a>
                 <a href="#como-funciona" class="hover:text-brand-cyan transition-colors">Como Funciona</a>
                 <a href="#oferta" class="hover:text-brand-cyan transition-colors">Preço</a>
+                <a href="#faq" class="hover:text-brand-cyan transition-colors">FAQ</a>
             </nav>
 
             <!-- CTA Header -->
@@ -102,10 +161,10 @@
                 Começar Agora
             </a>
 
-            <!-- Mobile Menu Icon (Apenas visual para simplicidade) -->
-            <button class="md:hidden text-slate-300">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
+            <!-- CTA Mobile (substituiu o ícone de menu que não abria nada) -->
+            <a href="https://pay.kiwify.com.br/Zfyn2Er" class="md:hidden inline-flex items-center justify-center px-4 py-2 text-xs font-semibold text-white bg-brand-purple rounded-full" aria-label="Começar agora — ir para o checkout do Pack 101 Meditações">
+                Acessar
+            </a>
         </div>
     </header>
 
@@ -343,7 +402,7 @@
     </section>
 
     <!-- SEÇÃO 6: DEPOIMENTOS -->
-    <section class="py-20 bg-slate-900/30">
+    <section id="depoimentos" class="py-20 bg-slate-900/30">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="font-serif text-3xl text-center mb-12">Histórias Reais</h2>
             
@@ -462,7 +521,7 @@
     </section>
 
     <!-- SEÇÃO 8: FAQ -->
-    <section class="py-20 bg-slate-900">
+    <section id="faq" class="py-20 bg-slate-900">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="font-serif text-3xl text-center mb-12">Perguntas Frequentes</h2>
 
@@ -523,22 +582,37 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-8 bg-brand-dark border-t border-slate-900 text-center">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex items-center justify-center gap-2 mb-4">
-                <i data-lucide="sparkles" class="text-slate-600 w-5 h-5"></i>
-                <span class="font-serif text-lg font-semibold text-slate-500">101 Meditações</span>
+    <footer class="py-12 bg-brand-dark border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-2 mb-2">
+                <i data-lucide="sparkles" class="text-brand-cyan/60 w-5 h-5"></i>
+                <span class="font-serif text-lg font-semibold text-slate-300">101 Meditações</span>
             </div>
-            <p class="text-slate-600 text-xs">
-                &copy; 2024 Todos os direitos reservados. <br>
-                Este site não faz parte do site do Facebook ou Facebook Inc.
+            <p class="text-slate-500 text-sm mb-6">Paz, sono profundo e foco — em poucos minutos por dia.</p>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500 mb-8" aria-label="Navegação do rodapé">
+                <a href="#beneficios" class="hover:text-brand-cyan transition-colors">Benefícios</a>
+                <a href="#como-funciona" class="hover:text-brand-cyan transition-colors">Como Funciona</a>
+                <a href="#depoimentos" class="hover:text-brand-cyan transition-colors">Depoimentos</a>
+                <a href="#oferta" class="hover:text-brand-cyan transition-colors">Preço</a>
+                <a href="#faq" class="hover:text-brand-cyan transition-colors">FAQ</a>
+            </nav>
+
+            <p class="text-slate-600 text-xs leading-relaxed max-w-2xl mx-auto">
+                &copy; <span id="ano-atual">2026</span> 101 Meditações. Todos os direitos reservados.<br>
+                Este site não faz parte do site do Facebook ou Facebook Inc. nem do Google ou Google Inc.<br>
+                Os resultados podem variar de pessoa para pessoa. Este conteúdo não substitui acompanhamento médico ou psicológico.
             </p>
         </div>
     </footer>
 
-    <!-- Script Icons -->
+    <!-- Scripts -->
     <script>
+        // Ícones Lucide
         lucide.createIcons();
+
+        // Ano atual no rodapé (mantém o copyright sempre correto)
+        document.getElementById('ano-atual').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
