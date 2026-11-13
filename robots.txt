@@ -1,0 +1,10 @@
+# robots.txt — 101 Meditações
+# https://tgmidasx7.github.io/mindemotions-app/
+
+User-agent: *
+Allow: /
+
+# Evita indexar parâmetros de rastreamento (ex.: ?utm_source=...)
+Disallow: /*?utm_
+
+Sitemap: https://tgmidasx7.github.io/mindemotions-app/sitemap.xml
